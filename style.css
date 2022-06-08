@@ -1,7 +1,12 @@
+@font-face {
+    font-family: myfont;
+    src: url(font.ttf);
+}
+
 body {
-    font-family: sans-serif;
+    font-family: myFont, sans-serif;
     color: white;
-    background-color: #92A1B3;
+    background-color: #A0D4FF;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,9 +16,10 @@ body {
 }
 
 .resultWindow {
+    margin-top: 16px;
     height: 100px;
     width: 964px;
-    background-color: #22252d;
+    background-color: gray;
     display: flex;
     justify-content: space-between;
 
@@ -22,7 +28,13 @@ body {
 .result {
     align-self: center;
     padding-right: 36px;
-    font-size: 48px;
+    font-size: 56px;
+}
+
+.curNum {
+    font-size: 28px;
+    padding-top: 16px;
+    padding-left: 16px;
 }
 
 .calcBody {
@@ -50,17 +62,44 @@ body {
 }
 
 button {
+    font-family: myFont, sans-serif;
+    font-weight: 100;
     background-color: grey;
     border: black;
     border-radius: 100px;
     height: 70px;
     width: 200px;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
+}
+
+.clear, .backspace {
+    background-color: rgb(98, 35, 35);
+}
+
+.times, .plus, .minus, .dividedby, .exponent {
+    background-color: #254c6b;
 }
 
 
+.copyright {
+    font-size: 22px;
+}
 
-footer {
-    padding: 16px;
+a {
+    padding-left: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #4d5e67;
+    cursor: pointer;
+}
+
+button:active {
+  background-color: #2e3c44;
+  box-shadow: 0 5px rgba(53, 73, 84, 0.573);
+  transform: translateY(4px);
+  
 }
